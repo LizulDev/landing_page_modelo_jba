@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Requint Sabor – Padaria e Restaurante</title>
+  <link rel="icon" type="image/png" href="./src/img/logo_reqquint.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/style/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">Requint Sabor</a>
+  <ul class="nav-links">
+    <li><a href="#menu">Cardápio</a></li>
+    <li><a href="#reviews">Avaliações</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="https://wa.me/5551980449707" target="_blank" class="btn btn-primary">
+      📲 Pedir pelo WhatsApp
+    </a>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid container">
+    <div class="hero-content">
+      <div class="hero-eyebrow"><span class="tag">✦ Aberto de segunda a sábado</span></div>
+      <h1 class="hero-title">
+        Comida de verdade,<br><em>feita com amor</em>
+      </h1>
+      <p class="hero-desc">
+        Pratos artesanais preparados no dia, com ingredientes frescos da região.
+        Peça pelo WhatsApp e receba em casa em até 40 minutos.
+      </p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">🍽️ Ver cardápio</a>
+        <a href="#contato" class="btn btn-outline">Falar conosco</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">4.9★</div>
+          <div class="stat-label">avaliação média</div>
+        </div>
+        <div>
+          <div class="stat-num">2.4k+</div>
+          <div class="stat-label">pedidos entregues</div>
+        </div>
+        <!-- <div>
+          <div class="stat-num">40min</div>
+          <div class="stat-label">tempo médio delivery</div>
+        </div> -->
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-plate">
+        <div class="hero-badge">🔥 Mais pedido hoje</div>
+        <img class="hero-image"   src="./src/img/img2.jpeg" alt="prato mais vendido">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF BAR -->
+<div id="proof">
+  <div class="proof-track" id="proofTrack">
+    <div class="proof-item"><span>⭐</span> +2.400 pedidos entregues</div>
+    <div class="proof-item"><span>🚀</span> Entrega em até 40 min</div>
+    <div class="proof-item"><span>♻️</span> Embalagens sustentáveis</div>
+    <div class="proof-item"><span>📍</span> Atendemos toda a cidade</div>
+    <div class="proof-item"><span>💳</span> Pix, cartão e dinheiro</div>
+    <!-- duplicado para loop perfeito -->
+    <div class="proof-item"><span>⭐</span> +2.400 pedidos entregues</div>
+    <div class="proof-item"><span>🚀</span> Entrega em até 40 min</div>
+    <div class="proof-item"><span>♻️</span> Embalagens sustentáveis</div>
+    <div class="proof-item"><span>📍</span> Atendemos toda a cidade</div>
+    <div class="proof-item"><span>💳</span> Pix, cartão e dinheiro</div>
+  </div>
+</div>
+<!-- MENU -->
+<section id="menu">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">nosso cardápio</span>
+      <h2 class="section-title">O que tem hoje?</h2>
+      <p class="section-sub">Pratos preparados fresquinhos todos os dias.</p>
+    </div>
+    <div class="menu-filters reveal">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="saladas">Saladas</button>
+      <button class="filter-btn" data-filter="sopas">Sopas</button>
+      <!-- <button class="filter-btn" data-filter="bebidas">Bebidas</button> -->
+      <button class="filter-btn" data-filter="sobremesas">Sobremesas</button>
+    </div>
+    <div class="menu-grid" id="menuGrid">
+      <!-- gerado via JS -->
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="reviews">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">depoimentos</span>
+      <h2 class="section-title">O que nossos clientes dizem</h2>
+      <p class="section-sub">Mais de 500 avaliações 5 estrelas no Google e iFood.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Marmita do dia estava impecável! Arroz soltinho, feijão temperado do jeito certo. Já é meu almoço fixo da semana.</p>
+        <div class="review-author">
+          <div class="review-avatar">👩</div>
+          <div>
+            <div class="review-name">Ana Paula M.</div>
+            <div class="review-meta">Google • há 2 dias</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Melhor sopa de carne que comi na vida. Chegou quente, embalagem ótima. Recomendo demais pra quem curte comida caseira de qualidade.</p>
+        <div class="review-author">
+          <div class="review-avatar">👨</div>
+          <div>
+            <div class="review-name">Ricardo S.</div>
+            <div class="review-meta">iFood • há 5 dias</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Pedimos para o almoço do escritório inteiro. Todo mundo adorou. Atendimento pelo WhatsApp super rápido e entrega dentro do prazo!</p>
+        <div class="review-author">
+          <div class="review-avatar">👩‍💼</div>
+          <div>
+            <div class="review-name">Carla T.</div>
+            <div class="review-meta">Google • há 1 semana</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<!-- <div id="cta-band">
+  <div class="container">
+    <span class="tag">oferta do dia</span>
+    <h2 class="cta-title">Primeiro pedido com <span style="color:var(--accent)">10% off</span></h2>
+    <p class="cta-sub">Use o código <strong>BEMVINDO10</strong> ao fazer seu pedido pelo WhatsApp e ganhe desconto imediato.</p>
+    <div class="cta-actions">
+      <a href="https://wa.me/5548999999999?text=Ol%C3%A1!%20Quero%20usar%20o%20c%C3%B3digo%20BEMVINDO10" target="_blank" class="btn btn-primary">
+        💬 Pedir agora no WhatsApp
+      </a>
+    </div>
+  </div>
+</div> -->
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="tag">fale conosco</span>
+        <h2 class="contact-info-title">Estamos aqui<br>para atender você</h2>
+        <p class="contact-info-desc">Tire dúvidas, faça reservas ou encomendas especiais. Respondemos rapidinho!</p>
+
+        <div class="contact-detail">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-detail-label">Endereço</div>
+            <div class="contact-detail-value">Rua Fernando Ferrari, 159 - Nossa Senhora de Lourdes, Joaçaba/SC, 89600-000</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <div class="contact-detail-label">Horário</div>
+            <div class="contact-detail-value">Segunda a sábado: 11h30–13h30</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">📲</div>
+          <div>
+            <div class="contact-detail-label">WhatsApp</div>
+            <div class="contact-detail-value">(49) 98804-4371</div>
+          </div>
+        </div>
+        <!-- <div class="contact-detail">
+          <div class="contact-icon">✉️</div>
+           <div>
+            <div class="contact-detail-label">E-mail</div>
+            <div class="contact-detail-value">contato@sabordacasa.com.br</div>
+          </div> 
+        </div> -->
+      </div>
+
+      <div class="reveal">
+        <div class="form-group">
+          <label>Seu nome</label>
+          <input type="text" placeholder="João Silva" id="fname" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>WhatsApp</label>
+            <input type="tel" placeholder="(48) 99999-0000" id="fphone" />
+          </div>
+          <div class="form-group">
+            <label>Assunto</label>
+            <select id="fsubject">
+              <option>Fazer pedido</option>
+              <!-- <option>Reserva de mesa</option> -->
+              <option>Encomenda especial</option>
+              <option>Outro</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Mensagem</label>
+          <textarea placeholder="Olá! Gostaria de..." id="fmessage"></textarea>
+        </div>
+        <button class="btn btn-primary" style="width:100%; justify-content:center;" onclick="sendWhatsApp()">
+          📲 Enviar pelo WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Requint Sabor</div>
+        <p class="footer-tagline">Padaria e Restaurante</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/requint_sabor?igsh=MXYydDJ2ZnY2N3R1cA==" class="social-link">📸</a>
+          <a href="https://wa.me/5549988044371" class="social-link">📘</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Cardápio</div>
+        <ul class="footer-links">
+          <li><a href="#">Doces </a></li>
+          <li><a href="#">Salgados</a></li>
+          <li><a href="#">Sopas</a></li>
+          <li><a href="#">Sobremesas</a></li>
+          <li><a href="#">Bebidas</a></li>
+        </ul>
+      </div>
+      <!-- <div>
+        <div class="footer-col-title">Informações</div>
+        <ul class="footer-links">
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Área de entrega</a></li>
+          <li><a href="#">Formas de pagamento</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+        </ul>
+      </div> -->
+      <div>
+        <div class="footer-col-title">Horários</div>
+        <ul class="footer-links">
+          <li><a href="#">Sáb–Dom: 10h30–18h30</a></li>
+          <li><a href="#">Feriados: 10h30–18h30</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Requint Sabor. Todos os direitos reservados.</span>
+      <span>Feito com ❤️ para você</span>
+    </div>
+  </div>
+</footer>
+
+<!-- CART BUTTON -->
+<button id="cart-btn" onclick="openCart()">
+  🛒
+  <span id="cart-count">0</span>
+</button>
+
+<!-- TOAST -->
+<div id="toast"></div>
+
+<script src="./src/script/script.js"></script>
+</body>
+</html>
