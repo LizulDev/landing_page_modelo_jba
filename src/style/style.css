@@ -209,8 +209,8 @@
     }
 
     .hero-image{
-      width: 180px;
-      height: 180px;          /* Fixa a altura idêntica ao layout original */
+      width: 320px;
+      height: 320px;          /* Fixa a altura idêntica ao layout original */
       border-radius: 50%;
       object-fit: cover;      /* O segredo: corta e adapta a foto sem distorcer ou esticar */
       display: block;         /* Remove espaçamentos fantasmas de elementos de texto */
