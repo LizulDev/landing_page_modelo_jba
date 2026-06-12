@@ -1,9 +1,9 @@
  /* ── DADOS DO CARDÁPIO ──────────────────────────── */
   const items = [
-    { id:1, imagem:'./src/img/img1.jpeg', name:'Escolhas de saladas', desc:'Saladas de diversas cores e gostos', price:0.0, category:'saladas', badge:'' },
-    { id:2, imagem:'./src/img/img2.jpeg', name:'Doce caseiro especial', desc:'Pudim com cobertura de claras em neve e salpicos de chocolate', price:0.0, category:'sobremesas', badge:'novo' },
-    { id:3, imagem:'./src/img/img3.jpeg', name:'Saladas exóticas', desc:'Cebola, alface, tomate', price:0.0, category:'saladas', badge:'' },
-    { id:4, imagem:'./src/img/img4.jpeg', name:'Feijoada Tropeira', desc:'Caldo temperado com linguiça e couve. Vem com torradinhas.', price:0.0, category:'sopas', badge:'destaque' },
+    { id:1, imagem:'./src/img/img1.jpeg', name:'Escolhas de saladas', desc:'Saladas de diversas cores e gostos', price:19.9, category:'saladas', badge:'' },
+    { id:2, imagem:'./src/img/img2.jpeg', name:'Doce caseiro especial', desc:'Pudim com cobertura de claras em neve e salpicos de chocolate', price:17.90, category:'sobremesas', badge:'novo' },
+    { id:3, imagem:'./src/img/img3.jpeg', name:'Saladas exóticas', desc:'Cebola, alface, tomate', price:20.59, category:'saladas', badge:'' },
+    { id:4, imagem:'./src/img/img4.jpeg', name:'Feijoada Tropeira', desc:'Caldo temperado com linguiça e couve. Vem com torradinhas.', price:10.99, category:'sopas', badge:'destaque' },
   ];
 
   let cart = {};
