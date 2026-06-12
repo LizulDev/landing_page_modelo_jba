@@ -305,7 +305,7 @@
       margin-bottom: 6px;
     }
     .menu-card-image {
-      width: 50%;
+      width: 100%;
       height: 160px;          /* Fixa a altura idêntica ao layout original */
       object-fit: cover;      /* O segredo: corta e adapta a foto sem distorcer ou esticar */
       display: block;         /* Remove espaçamentos fantasmas de elementos de texto */
